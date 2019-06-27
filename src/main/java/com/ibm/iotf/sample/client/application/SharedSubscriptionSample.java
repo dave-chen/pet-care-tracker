@@ -13,7 +13,7 @@
  *
  *
  * 5/10/2019
- * Cindy Lee - Extended this sample for Pet Care Tracker solution purpose.
+ *  Extended this sample for Pet Care Tracker solution purpose.
  *****************************************************************************
  */
 
@@ -126,7 +126,7 @@ public class SharedSubscriptionSample {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
         Message message = Message
-                .creator(new PhoneNumber("+13108668380"), // to
+                .creator(new PhoneNumber("$number"), // to
                         new PhoneNumber("+14152126896"), // from
                         msg)
                 .create();
