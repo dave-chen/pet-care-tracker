@@ -63,7 +63,6 @@ public class SharedSubscriptionSample {
 	private final static String PROPERTIES_FILE_NAME = "/application.properties";
 
     public static final String ACCOUNT_SID = "AC9c80fb982caa830cd11f991aa1e64716";
-    public static final String AUTH_TOKEN =  "a698b8df6db3200db17042286dbc47a3";
 
 	public static void main(String[] args) throws Exception {
 		/**
@@ -123,7 +122,7 @@ public class SharedSubscriptionSample {
 
     private static void sendSMS(String msg)
     {
-        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+        Twilio.init(ACCOUNT_SID, $AUTH_TOKEN);
 
         Message message = Message
                 .creator(new PhoneNumber("$number"), // to
